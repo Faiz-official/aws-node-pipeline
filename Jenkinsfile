@@ -23,7 +23,7 @@ pipeline {
         stage('Run Container') {
             steps {
                 script {
-                    docker.image("${IMAGE_NAME}").run('-d -p 8080:8080')
+                    docker.image("${IMAGE_NAME}").run('-d -p 8081:8080')
                 }
             }
         }
